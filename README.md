@@ -1,4 +1,4 @@
-# 📈 NextTrade - Stock Qualifier (Proprietary)
+# 📈 NextSwingTrade - Stock Qualifier (Proprietary)
 
 NextTrade is a powerful and private Streamlit-based stock analysis tool developed for bullish swing trading in NSE stocks. It allows users to filter and visualize the best trading candidates using a combination of technical indicators, volume spikes, and real-time corporate data such as earnings and dividend dates.
 
