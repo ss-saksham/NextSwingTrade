@@ -68,12 +68,7 @@ def analyze_single_stock(stock):
             latest["MACD_Hist"] > 0,
             latest["MACD_Line"] > latest["MACD_Signal"],
             (latest['Volume'] > latest["Volume_Avg"]) and (latest['Close'] > df.iloc[-2]['Close']),
-            latest["20_SMA"] > latest["50_SMA"] > latest["200_SMA"],
-            latest['Close'] > latest["20_SMA"],
-            latest['Close'] > latest["50_SMA"],
-            latest['Close'] > latest["200_SMA"],
-            latest['ATR'] > 0.01 * latest['Close'],
-            latest["ADX"] > 20 and latest["DI+"] > latest["DI-"],
+            latest["20_SMA"] > latest["50_SMA"] > latest["200_SMA"]
         ]
         if all(conditions):
             return {
